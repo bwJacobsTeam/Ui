@@ -186,10 +186,38 @@ nav div {
   align-items: center;
   margin: 10px 0;
 }
-nav img {
+nav div img {
   width: 30%;
 }
-nav a {
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+nav .dropdown .btn,
+nav .dropdown .btn-dropdown {
+  background-color: white;
+  width: 175px;
+  height: 50px;
+  font-size: 1.8rem;
+  border: none;
+  color: black;
+}
+nav .dropdown .btn:hover,
+nav .dropdown .btn-dropdown:hover {
+  background-color: #E66C4D;
+}
+nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  max-width: 175px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+nav .dropdown .dropdown-content a {
+  display: block;
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
