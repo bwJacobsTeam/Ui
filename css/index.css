@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Alata', sans-serif;
-  color: black;
+  color: #212529;
   line-height: 1.5;
 }
 body {
@@ -149,7 +149,7 @@ h4,
 h5,
 h6 {
   font-family: 'Alata', sans-serif;
-  color: black;
+  color: #212529;
 }
 h1 {
   font-size: 3.6rem;
@@ -166,10 +166,6 @@ h4 {
 p {
   font-size: 1.6rem;
   line-height: 1.5;
-}
-.container {
-  width: 100%;
-  margin: 0 auto;
 }
 nav {
   display: flex;
@@ -198,4 +194,20 @@ nav div a {
 }
 nav div a:hover {
   background: #E66C4D;
+}
+.team {
+  width: 100%;
+}
+.team div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.team img {
+  border-radius: 50%;
+}
+.team a {
+  text-decoration: none;
+  color: black;
 }
