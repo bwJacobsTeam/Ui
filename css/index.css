@@ -186,6 +186,11 @@ nav div {
 nav div img {
   width: 8%;
 }
+@media (max-width: 500px) {
+  nav div img {
+    width: 15%;
+  }
+}
 nav div a {
   text-decoration: none;
   font-size: 1.8rem;
@@ -194,6 +199,12 @@ nav div a {
 }
 nav div a:hover {
   background: #E66C4D;
+}
+@media (max-width: 500px) {
+  nav div a {
+    font-size: 1.6rem;
+    margin: 0 3%;
+  }
 }
 .team {
   width: 100%;
