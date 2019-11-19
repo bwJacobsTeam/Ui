@@ -1,18 +1,19 @@
-.flex (@direction, @justify, @align){
+.flex (@direction, @justify, @align) {
     display: flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
 
-.button (@btncolor, @txtcolor){
-    display: block;
-    background-color: @btncolor;
-    color: @txtcolor;
-    width: 200px;
-    height: 40px;
-    font-size: 1.7rem;
-    border-radius: 15px;
-    padding: 10px 0;
-    text-align: center;
+.btn-class (@width, @height, @color) {
+    background-color: white;
+    width: @width;
+    height: @height;
+    font-size: 1.8rem;
+    border: none;
+    color: @color;
+
+    &:hover {
+        background-color: @hover;
+    }
 }

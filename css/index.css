@@ -161,4 +161,33 @@ section .contact {
 }
 .button {
   background-image: linear-gradient(to bottom right, #E48047, #342F48);
+.contact {
+  background-image: url('img/giraffetxture.jpg');
+}
+.button {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+.team {
+  width: 100%;
+}
+.team img {
+  border-radius: 50%;
+  width: 245px;
+}
+.team a {
+  text-decoration: none;
+  color: black;
+}
+.team .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.team .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
