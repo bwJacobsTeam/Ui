@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class = container>
+<div class = container>
+    <header>
     <nav>
         <div class="logo-img">
             <img src="images/sta_logo.gif" alt="Save the Animals logo">
@@ -23,21 +24,27 @@
         </div>
     </nav>
 
-    <header>
-    <div>
+    <div class = hello>
     <h1> Key Conservation | Empowering Hope</h1>
     <h3>There are thousands of conservation organizations all over the world working tirelessly to stop extinction but they need our help.</h3>
-    </div>
-    <div class = intro>
-        <iframe src="https://player.vimeo.com/video/302643961" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/302643961" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </header>  
+
+    <section class = content>
+        <div class = intro>
             <div class = introcontent>
             <h2> Who We Are</h2>
-            <p>Key Conservation is helping conservationists gain critical funding and global support through a mobile app (in development) that provides real-time updates on day-to-day campaigns.</p>
+            <p> We are wildlife biologists who saw a massive disconnect in the way we could reach out for real-time global support for critical needs outside of our project's budget. We also knew conservation organizations all over the world were facing similar issues. <br><br>
+            Additionally, supporters of conservation organizations want more transparency as to where their money is going, what the outcome of their support is, as well as better ways to stay connected.
+            </p>
             </div>
-            <div class = introimg style="background-image: url('img_tiger2.jpg');"> <!-- Text next to image with button to get started (either as org or support-->
-            <button class = call> Let's Get Started  </button>
-            </div> <!-- Link to Home.js/equivalent to 'get on the app button on current site' -->
-    </header>
+            <div class = introimg > <!-- Text next to image with button to get started (either as org or support-->
+            <p>Key Conservation is helping conservationists gain critical funding and global support through a mobile app (in development) that provides real-time updates on day-to-day campaigns.
+            </p>
+            <button> Let's Get Started  </button>
+            </div> <!-- Link to Home.js/equivalent to 'get on the app' button on current site -->
+        </div>
+    </section>
 
     <section class = banner>
         <img src = img/keybanner.png>
@@ -60,39 +67,43 @@
     </section>
 
     <section class = livefeed>
-        <div> <!--could be a rolling livefeed of current campaigns-->
-        <h2> Current Campaigns </h2>
-        <div class = campaignthumb >
-        <h4> Drones for Rhinos </h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam eaque beatae debitis dolore</p>
-        <button class = campaignthumb> See More </button>
-        </div>
-        <div class = campaignthumb>
-        <h4> Arctic Polar Bear Tracking </h4>
-        <p> Lorepudiandae mollitia aspernatur! Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae.</p>
-        <button class = campaignthumb> See More </button>
-        </div>
-        <div class = campaignthumb> 
-        <h4>Dolphin Habitat Clean Up</h4>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae architecto sapiente placeat omn.
-        </p>
-        <button> See More </button>
-        </div>
-        </div>
+        <!--could be a rolling livefeed of current campaigns-->
+            <h2> Current Campaigns </h2>
+            <div class = livefeeddiv>
+                <div class = campaignthumb >
+                    <h4> Drones for Rhinos </h4>
+                    <img src >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam eaque beatae debitis dolore</p>
+                    <button class = campaignthumb> See More </button>
+                </div>
+                <div class = campaignthumb>
+                    <h4> Arctic Polar Bear Tracking </h4>
+                    <img >
+                    <p> Lorepudiandae mollitia aspernatur! Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae.</p>
+                    <button class = campaignthumb> See More </button>
+                </div>
+                <div class = campaignthumb>
+                    <h4>Dolphin Habitat Clean Up</h4>
+                    <img >
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae architecto sapiente placeat omn.</p>
+                    <button class = campaignthumb> See More </button>
+                </div>
+            </div>
     </section>
 
-    <section class = go> <!-- additional call to action-->
+    <section class = content> <!-- additional call to action-->
         <h2> Get Started </h2>
-        <div class = org>
-            <button>
+            <div class = org>
+                <button>
                 Start a Campaign
-            </button>
-        </div>
-        <div class = support>
-            <button>
+                </button>
+            </div>
+            <div class = support>
+                <button>
                 How Can I Help?
-            </button>
-        </div>
+                </button>
+            </div>
+    </section>
 
     <section class = contact>
         <div>
@@ -100,11 +111,10 @@
         <address>
             <p>P.O. BOX 7552 <br>
             SAN DIEGO, CALIFORNIA 92017<br>  
-            UNITED STATES OF AMERICA <br></p>
+            UNITED STATES OF AMERICA <br>
+        <a href = "mail-to:CONTACT@KEYCONSERVATION.ORG" > <img src = "img/icons/icons8-mailer.png"> CONTACT@KEYCONSERVATION.ORG </a>        <br>
         </address>
         <div class = media>
-            <p><a mail-to:CONTACT@KEYCONSERVATION.ORG > <img src = "img/icons/icons8-mailer.png"> CONTACT@KEYCONSERVATION.ORG </a></p>
-        <br>
             <a href = "https://www.instagram.com/keyconservation/" alt = instagram target = _blank> 
                 <img src = "img/icons/icons8-instagram_new.png"> 
             </a>
@@ -153,7 +163,7 @@
             <a href = "https://keyconservation.tumblr.com/" alt = tumblr target = _blank> 
             <img src = "img/icons/icons8-tumblr.png">
             </a>
-            <a href "mail-to:CONTACT@KEYCONSERVATION.ORG"> 
+            <a href = "mail-to:CONTACT@KEYCONSERVATION.ORG"> 
                 <img src = "img/icons/icons8-mailer.png"> 
             </a>
         </nav>

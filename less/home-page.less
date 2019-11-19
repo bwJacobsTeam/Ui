@@ -1,71 +1,104 @@
 
-
-
-
-
-
-
-
-.banner {
-    flex: row, center, center;
+.container {
+    .flex(column, center, center);
     width: 100%;
-    height: auto;
+    
+    .hello {
+        background-image: url("../img/whale.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: scroll;
+    } // closes info div//
 
-    img {
+    .intro {
+        .flex(row, center, center);
+
+        .introcontent {
+            width: 50%;
+            height: 500px;
+            background-color: @main-bg;
+        }
+        .introimg {
+            background-image: url("../img/tiger2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-color: @ltorange;
+            width: 50%;
+            height: 500px;
+            border: solid green 3px;
+            color: @main-bg;
+        }
+    }    
+    .banner {
+        .flex(row, center, center);
         width: 100%;
-    }
-}
+        height: auto;
+            img {
+            width: 100%;
+            }
+    } //closes fox fur banner//
 
-.livefeed {
-    flex: row, space-between, center;
+    .livefeeddiv {
+        .flex(row, space-between, center);
+        width: 100%;
 
-    .campaignthumb {
-        flex: row, space-between, center;
-        width: 30%;
-    }
-}
+        .campaignthumb {
+            .flex(column, space-between, center);
+            width: 30%;
+        }
+    } //closes livefeed//
 
-.go {
-    flex: row, space-evenly, center; 
+    .go {
+        .org {
+            .flex(column, space-between, center);
+            background-image: url("../img/goat.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            background-color: @ltorange;
+            height: 700px;
+            border: solid yellow 3px;
+
+            button {
+                width: 100%;
+            }
+        }
     
-    .org {
-    background-image: url("../img/goat.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-color: @ltorange;
-    width: 30%;
-    height: 700px;
+        .support {
+            .flex(column, space-between, center);
+            background-image: url("../img/fox.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            background-color: @ltorange;
+            height: 700px;
+            border: solid green 3px;
 
-    border: solid yellow 3px;
-    }
-    
-    .support {
-    background-image: url("../img/fox.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-color: @ltorange;
-    width: 30%;
-    height: 700px;
-    border: solid green 3px;
-    }
-}
+            button {
+                width: 100%;
+            }
+        }
+    } //closes second call to action//
 
-section .contact{
-    background-image: url("../img/giraffetexture.jpg");
-    background-repeat: repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-color: @ltorange;
-    width: 100%;
+    .contact{
+        background-image: url("../img/giraffetexture.jpg");
+        background-repeat: repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-color: @ltorange;
+        width: 100%;
         
-        a {
-            text-decoration: none;
-        }
+            a {
+                text-decoration: none;
+                color: @font-color;
+            }
 
-        a:hover {
-            text-decoration: none;
-        }
+            a:hover {
+                text-decoration: none;
+                color: @hover;
+            }
 
-}
+    } //closes contact//
+
+} //container close//

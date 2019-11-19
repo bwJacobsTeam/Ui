@@ -273,45 +273,99 @@ footer .nature a {
     margin-bottom: 2%;
   }
 }
-.banner {
-  flex: row, center, center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .hello {
+  background-image: url("../img/whale.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+}
+.container .intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container .intro .introcontent {
+  width: 50%;
+  height: 500px;
+  background-color: #F2F3F0;
+}
+.container .intro .introimg {
+  background-image: url("../img/tiger2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-color: #E48047;
+  width: 50%;
+  height: 500px;
+  border: solid green 3px;
+  color: #F2F3F0;
+}
+.container .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
 }
-.banner img {
+.container .banner img {
   width: 100%;
 }
-.livefeed {
-  flex: row, space-between, center;
+.container .livefeeddiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.livefeed .campaignthumb {
-  flex: row, space-between, center;
+.container .livefeeddiv .campaignthumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 30%;
 }
-.go {
-  flex: row, space-evenly, center;
-}
-.go .org {
+.container .go .org {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("../img/goat.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
   background-color: #E48047;
-  width: 30%;
   height: 700px;
   border: solid yellow 3px;
 }
-.go .support {
+.container .go .org button {
+  width: 100%;
+}
+.container .go .support {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("../img/fox.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
   background-color: #E48047;
-  width: 30%;
   height: 700px;
   border: solid green 3px;
 }
-section .contact {
+.container .go .support button {
+  width: 100%;
+}
+.container .contact {
   background-image: url("../img/giraffetexture.jpg");
   background-repeat: repeat;
   background-position: bottom;
@@ -319,11 +373,13 @@ section .contact {
   background-color: #E48047;
   width: 100%;
 }
-section .contact a {
+.container .contact a {
   text-decoration: none;
+  color: #212529;
 }
-section .contact a:hover {
+.container .contact a:hover {
   text-decoration: none;
+  color: #E66C4D;
 }
 .team {
   width: 100%;
