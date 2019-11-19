@@ -220,6 +220,18 @@ nav div a:hover {
 .team .people-content {
   padding: 0 3%;
 }
+.team .people-content h3 {
+  font-size: 3.6rem;
+}
+.team .people-content h4 {
+  color: #342F48;
+}
+.team .people-content p {
+  font-size: 2rem;
+}
+.team .people-content p:hover {
+  color: #E66C4D;
+}
 .team img {
   border-radius: 50%;
   width: 245px;
