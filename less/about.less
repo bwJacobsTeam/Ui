@@ -1,10 +1,24 @@
 .team {
     width: 100%;
+    background: @white;
 
     .background-img {
         .bg-img(100%);
         background-image: url('/images/sea.jpg');
         height: 80vh;
+
+        h2 {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            text-transform: uppercase;
+            position: absolute;
+            font-size: 3.2rem;
+        }
+
+    }
+
+    .people-content {
+        padding: 0 3%;
     }
 
     img {
@@ -20,11 +34,24 @@
     .people {
         .flex(row, center, center);
         width: 100%;
+        padding-top: 2%;
+        padding-right:20%;
     }
 
     .reverse {
         .flex(row-reverse, center, center);
+        width: 100%;
+        padding-top: 2%;
+        padding-left: 20%;
     }
 
-    
+    .react {
+        height: 80vh;
+    }
+
+    .ui {
+        .bg-img(100%);
+        background-image: url('/images/leaf.jpg');
+        height: 80vh;
+    }
 }

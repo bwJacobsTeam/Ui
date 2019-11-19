@@ -197,6 +197,7 @@ nav div a:hover {
 }
 .team {
   width: 100%;
+  background: #F2F3F0;
 }
 .team .background-img {
   background-repeat: no-repeat;
@@ -206,6 +207,16 @@ nav div a:hover {
   width: 100%;
   background-image: url('/images/sea.jpg');
   height: 80vh;
+}
+.team .background-img h2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 3.2rem;
+}
+.team .people-content {
+  padding: 0 3%;
 }
 .team img {
   border-radius: 50%;
@@ -221,10 +232,27 @@ nav div a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 2%;
+  padding-right: 20%;
 }
 .team .reverse {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 20%;
+}
+.team .react {
+  height: 80vh;
+}
+.team .ui {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('/images/leaf.jpg');
+  height: 80vh;
 }
