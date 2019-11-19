@@ -1,9 +1,71 @@
-section .contact{
-    background-image: url('img/giraffetexture.jpg');
-    background-repeat: none;
-    background-color: @orange;
+
+
+
+
+
+
+
+
+.banner {
+    flex: row, center, center;
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+    }
 }
 
-.button {
-    background-image: linear-gradient(to bottom right, @orange, @purple);
+.livefeed {
+    flex: row, space-between, center;
+
+    .campaignthumb {
+        flex: row, space-between, center;
+        width: 30%;
+    }
+}
+
+.go {
+    flex: row, space-evenly, center; 
+    
+    .org {
+    background-image: url("../img/goat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-color: @ltorange;
+    width: 30%;
+    height: 700px;
+
+    border: solid yellow 3px;
+    }
+    
+    .support {
+    background-image: url("../img/fox.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-color: @ltorange;
+    width: 30%;
+    height: 700px;
+    border: solid green 3px;
+    }
+}
+
+section .contact{
+    background-image: url("../img/giraffetexture.jpg");
+    background-repeat: repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: @ltorange;
+    width: 100%;
+        
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
 }
