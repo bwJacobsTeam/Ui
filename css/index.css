@@ -198,16 +198,24 @@ nav div a:hover {
 .team {
   width: 100%;
 }
-.team div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .team img {
   border-radius: 50%;
+  width: 245px;
 }
 .team a {
   text-decoration: none;
   color: black;
+}
+.team .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.team .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
