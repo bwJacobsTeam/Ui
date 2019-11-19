@@ -200,11 +200,13 @@ nav div a {
 nav div a:hover {
   background: #E66C4D;
 }
+
 @media (max-width: 500px) {
   nav div a {
     font-size: 1.6rem;
     margin: 0 3%;
   }
+
 }
 .team {
   width: 100%;
