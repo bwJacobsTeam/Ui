@@ -198,6 +198,15 @@ nav div a:hover {
 .team {
   width: 100%;
 }
+.team .background-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('/images/sea.jpg');
+  height: 80vh;
+}
 .team img {
   border-radius: 50%;
   width: 245px;
