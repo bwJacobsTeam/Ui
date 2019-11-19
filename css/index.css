@@ -206,7 +206,7 @@ nav div a:hover {
   background-size: cover;
   width: 100%;
   background-image: url('/images/sea.jpg');
-  height: 80vh;
+  height: 575px;
 }
 .team .background-img h2 {
   writing-mode: vertical-rl;
@@ -214,6 +214,8 @@ nav div a:hover {
   text-transform: uppercase;
   position: absolute;
   font-size: 3.2rem;
+  font-weight: bold;
+  margin: 1.5% 0 0 2%;
 }
 .team .people-content {
   padding: 0 3%;
@@ -245,7 +247,7 @@ nav div a:hover {
   padding-left: 20%;
 }
 .team .react {
-  height: 80vh;
+  height: 575px;
 }
 .team .ui {
   background-repeat: no-repeat;
@@ -254,5 +256,21 @@ nav div a:hover {
   background-size: cover;
   width: 100%;
   background-image: url('/images/leaf.jpg');
-  height: 80vh;
+  height: 575px;
+}
+.quote {
+  height: 300px;
+  text-align: center;
+}
+.quote div {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote div p {
+  font-size: 2rem;
+  width: 30%;
+  padding: 2%;
 }
