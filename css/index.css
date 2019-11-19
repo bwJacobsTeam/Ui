@@ -195,6 +195,12 @@ nav div a {
 nav div a:hover {
   background: #E66C4D;
 }
+.contact {
+  background-image: url('img/giraffetxture.jpg');
+}
+.button {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
 .team {
   width: 100%;
 }
