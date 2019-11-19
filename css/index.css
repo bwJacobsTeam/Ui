@@ -219,6 +219,11 @@ nav div a:hover {
   background-image: url('/images/sea.jpg');
   height: 575px;
 }
+@media (max-width: 500px) {
+  .team .background-img {
+    height: 875px;
+  }
+}
 .team .background-img h2 {
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -228,8 +233,22 @@ nav div a:hover {
   font-weight: bold;
   margin: 1.5% 0 0 2%;
 }
+@media (max-width: 500px) {
+  .team .background-img h2 {
+    writing-mode: horizontal-tb;
+    position: relative;
+    text-align: center;
+    padding-top: 4%;
+  }
+}
 .team .people-content {
   padding: 0 3%;
+}
+@media (max-width: 500px) {
+  .team .people-content {
+    padding: 0 0;
+    text-align: center;
+  }
 }
 .team .people-content h3 {
   font-size: 3.6rem;
@@ -260,6 +279,16 @@ nav div a:hover {
   padding-top: 2%;
   padding-right: 20%;
 }
+@media (max-width: 500px) {
+  .team .people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+    padding-right: 0;
+  }
+}
 .team .reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -269,8 +298,25 @@ nav div a:hover {
   padding-top: 2%;
   padding-left: 20%;
 }
+@media (max-width: 500px) {
+  .team .reverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
 .team .react {
   height: 575px;
+}
+@media (max-width: 500px) {
+  .team .react {
+    height: 825px;
+  }
+  .team .react .people {
+    padding-top: 7%;
+  }
 }
 .team .ui {
   background-repeat: no-repeat;
@@ -281,9 +327,22 @@ nav div a:hover {
   background-image: url('/images/leaf.jpg');
   height: 575px;
 }
+@media (max-width: 500px) {
+  .team .ui {
+    height: 825px;
+  }
+  .team .ui .people {
+    padding-top: 7%;
+  }
+}
 .quote {
   height: 300px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .quote {
+    height: 250px;
+  }
 }
 .quote div {
   padding: 3%;
@@ -296,4 +355,9 @@ nav div a:hover {
   font-size: 2rem;
   width: 30%;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .quote div p {
+    width: 75%;
+  }
 }
