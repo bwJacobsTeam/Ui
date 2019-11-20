@@ -186,15 +186,22 @@ nav div {
 nav div img {
   width: 8%;
 }
+@media (max-width: 500px) {
+  nav div img {
+    width: 15%;
+  }
+}
 nav div a {
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 4%;
+  padding: 0 1%;
   color: black;
 }
 nav div a:hover {
   background: #E66C4D;
 }
+
 footer {
   display: flex;
   flex-direction: row;
@@ -380,13 +387,68 @@ footer .nature a {
 .container .contact a:hover {
   text-decoration: none;
   color: #E66C4D;
+
+
 }
 .team {
   width: 100%;
+  background: #F2F3F0;
+}
+.team .background-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('/images/sea.jpg');
+  height: 575px;
+}
+@media (max-width: 500px) {
+  .team .background-img {
+    height: 875px;
+  }
+}
+.team .background-img h2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 1.5% 0 0 2%;
+}
+@media (max-width: 500px) {
+  .team .background-img h2 {
+    writing-mode: horizontal-tb;
+    position: relative;
+    text-align: center;
+    padding-top: 4%;
+  }
+}
+.team .people-content {
+  padding: 0 3%;
+}
+@media (max-width: 500px) {
+  .team .people-content {
+    padding: 0 0;
+    text-align: center;
+  }
+}
+.team .people-content h3 {
+  font-size: 3.6rem;
+}
+.team .people-content h4 {
+  color: #342F48;
+}
+.team .people-content p {
+  font-size: 2rem;
+}
+.team .people-content p:hover {
+  color: #E66C4D;
 }
 .team img {
   border-radius: 50%;
-  width: 245px;
+  width: 240px;
 }
 .team a {
   text-decoration: none;
@@ -398,10 +460,88 @@ footer .nature a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 2%;
+  padding-right: 20%;
+}
+@media (max-width: 500px) {
+  .team .people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+    padding-right: 0;
+  }
 }
 .team .reverse {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 20%;
+}
+@media (max-width: 500px) {
+  .team .reverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+.team .react {
+  height: 575px;
+}
+@media (max-width: 500px) {
+  .team .react {
+    height: 825px;
+  }
+  .team .react .people {
+    padding-top: 7%;
+  }
+}
+.team .ui {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('/images/leaf.jpg');
+  height: 575px;
+}
+@media (max-width: 500px) {
+  .team .ui {
+    height: 825px;
+  }
+  .team .ui .people {
+    padding-top: 7%;
+  }
+}
+.quote {
+  height: 300px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .quote {
+    height: 250px;
+  }
+}
+.quote div {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote div p {
+  font-size: 2rem;
+  width: 30%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .quote div p {
+    width: 75%;
+  }
 }
