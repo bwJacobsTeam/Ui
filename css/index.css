@@ -194,14 +194,20 @@ nav div img {
 nav div a {
   text-decoration: none;
   font-size: 1.8rem;
-  margin: 0 4%;
+  margin: 0 3%;
   padding: 0 1%;
   color: black;
 }
 nav div a:hover {
   background: #E66C4D;
 }
-
+@media (max-width: 500px) {
+  nav div a {
+    font-size: 1.6rem;
+    margin: 0 3%;
+    padding: 0;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -387,8 +393,6 @@ footer .nature a {
 .container .contact a:hover {
   text-decoration: none;
   color: #E66C4D;
-
-
 }
 .team {
   width: 100%;
@@ -436,6 +440,11 @@ footer .nature a {
 }
 .team .people-content h3 {
   font-size: 3.6rem;
+}
+@media (max-width: 500px) {
+  .team .people-content h3 {
+    font-size: 3.2rem;
+  }
 }
 .team .people-content h4 {
   color: #342F48;
