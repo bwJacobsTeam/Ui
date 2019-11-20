@@ -592,13 +592,9 @@ footer .nature a {
   }
 }
 .quote {
-  height: 300px;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .quote {
-    height: 250px;
-  }
 }
 .quote div {
   padding: 3%;
@@ -607,13 +603,27 @@ footer .nature a {
   justify-content: center;
   align-items: center;
 }
+.quote div h2 {
+  color: #342F48;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .quote div h2 {
+    font-size: 3rem;
+  }
+}
 .quote div p {
-  font-size: 2rem;
+  font-family: 'Handlee', cursive;
+  font-size: 2.4rem;
   width: 30%;
   padding: 2%;
 }
 @media (max-width: 500px) {
   .quote div p {
     width: 75%;
+    font-size: 2rem;
   }
+}
+.quote div h4 {
+  font-size: 2.4rem;
 }
