@@ -202,12 +202,192 @@ nav div a:hover {
   background: #E66C4D;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #F2F3F0;
+}
 @media (max-width: 500px) {
-  nav div a {
-    font-size: 1.6rem;
-    margin: 0 3%;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+}
+footer .footernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  padding-left: 4%;
+}
+footer .footernav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer .footernav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
     padding: 0;
   }
+}
+footer .copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+@media (max-width: 500px) {
+  footer .copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 3%;
+  }
+}
+footer .nature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: right;
+  width: 33%;
+}
+footer .nature a {
+  padding-left: 3%;
+}
+@media (max-width: 500px) {
+  footer .nature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .hello {
+  background-image: url("../img/whale.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+}
+.container .intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container .intro .introcontent {
+  width: 50%;
+  height: 500px;
+  background-color: #F2F3F0;
+}
+.container .intro .introimg {
+  background-image: url("../img/tiger2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-color: #E48047;
+  width: 50%;
+  height: 500px;
+  border: solid green 3px;
+  color: #F2F3F0;
+}
+.container .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.container .banner img {
+  width: 100%;
+}
+.container .livefeeddiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container .livefeeddiv .campaignthumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.container .go .org {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/goat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-color: #E48047;
+  height: 700px;
+  border: solid yellow 3px;
+}
+.container .go .org button {
+  width: 100%;
+}
+.container .go .support {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/fox.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-color: #E48047;
+  height: 700px;
+  border: solid green 3px;
+}
+.container .go .support button {
+  width: 100%;
+}
+.container .contact {
+  background-image: url("../img/giraffetexture.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-color: #E48047;
+  width: 100%;
+}
+.container .contact a {
+  text-decoration: none;
+  color: #212529;
+}
+.container .contact a:hover {
+  text-decoration: none;
+  color: #E66C4D;
+
 
 }
 .team {

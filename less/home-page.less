@@ -1,7 +1,104 @@
-.contact {
-    background-image: url('img/giraffetxture.jpg') 
-}
 
-.button {
-    background-image: linear-gradient(to bottom right, red, yellow);
-}
+.container {
+    .flex(column, center, center);
+    width: 100%;
+    
+    .hello {
+        background-image: url("../img/whale.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: scroll;
+    } // closes info div//
+
+    .intro {
+        .flex(row, center, center);
+
+        .introcontent {
+            width: 50%;
+            height: 500px;
+            background-color: @main-bg;
+        }
+        .introimg {
+            background-image: url("../img/tiger2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-color: @ltorange;
+            width: 50%;
+            height: 500px;
+            border: solid green 3px;
+            color: @main-bg;
+        }
+    }    
+    .banner {
+        .flex(row, center, center);
+        width: 100%;
+        height: auto;
+            img {
+            width: 100%;
+            }
+    } //closes fox fur banner//
+
+    .livefeeddiv {
+        .flex(row, space-between, center);
+        width: 100%;
+
+        .campaignthumb {
+            .flex(column, space-between, center);
+            width: 30%;
+        }
+    } //closes livefeed//
+
+    .go {
+        .org {
+            .flex(column, space-between, center);
+            background-image: url("../img/goat.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            background-color: @ltorange;
+            height: 700px;
+            border: solid yellow 3px;
+
+            button {
+                width: 100%;
+            }
+        }
+    
+        .support {
+            .flex(column, space-between, center);
+            background-image: url("../img/fox.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            background-color: @ltorange;
+            height: 700px;
+            border: solid green 3px;
+
+            button {
+                width: 100%;
+            }
+        }
+    } //closes second call to action//
+
+    .contact{
+        background-image: url("../img/giraffetexture.jpg");
+        background-repeat: repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-color: @ltorange;
+        width: 100%;
+        
+            a {
+                text-decoration: none;
+                color: @font-color;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: @hover;
+            }
+
+    } //closes contact//
+
+} //container close//
