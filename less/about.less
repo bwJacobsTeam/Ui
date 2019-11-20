@@ -7,6 +7,10 @@
         background-image: url('/images/sea.jpg');
         height: 575px;
 
+        @media @tablet {
+            height: 650px;
+        }
+
         @media @phone {
             height: 860px;
         }
@@ -20,6 +24,13 @@
             font-weight: bold;
             margin: 1.5% 0 0 2%;
 
+            @media @tablet {
+                writing-mode: horizontal-tb;
+                position: relative;
+                text-align: center;
+                padding-top: 4%;
+            }
+
             @media @phone {
                 writing-mode: horizontal-tb;
                 position: relative;
@@ -28,24 +39,16 @@
             }
         }
 
-        .people {
-            
-            @media @tablet {
-                padding-top: 4%;
-                padding-left: 10%;
-            }
-
-            @media @phone {
-                padding-left: 0;
-            }
-        }
-
     }
 
     .people-content {
+        .flex(column, center, flex-start);
+        flex-wrap: nowrap;
+        text-align: left;
         padding: 0 3%;
 
         @media @phone {
+            .flex(column, center, center);
             padding: 0 0;
             text-align: center;
         }
@@ -144,12 +147,7 @@
 }
 
 .quote {
-    // height: 300px;
     text-align: center;
-
-    @media @phone {
-        // height: 250px;
-    }
    
     div {
         padding: 3%;

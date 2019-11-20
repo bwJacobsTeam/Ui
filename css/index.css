@@ -480,6 +480,11 @@ footer .nature a {
   background-image: url('/images/sea.jpg');
   height: 575px;
 }
+@media (max-width: 800px) {
+  .team .background-img {
+    height: 650px;
+  }
+}
 @media (max-width: 500px) {
   .team .background-img {
     height: 860px;
@@ -494,6 +499,14 @@ footer .nature a {
   font-weight: bold;
   margin: 1.5% 0 0 2%;
 }
+@media (max-width: 800px) {
+  .team .background-img h2 {
+    writing-mode: horizontal-tb;
+    position: relative;
+    text-align: center;
+    padding-top: 4%;
+  }
+}
 @media (max-width: 500px) {
   .team .background-img h2 {
     writing-mode: horizontal-tb;
@@ -502,22 +515,21 @@ footer .nature a {
     padding-top: 4%;
   }
 }
-@media (max-width: 800px) {
-  .team .background-img .people {
-    padding-top: 4%;
-    padding-left: 10%;
-  }
-}
-@media (max-width: 500px) {
-  .team .background-img .people {
-    padding-left: 0;
-  }
-}
 .team .people-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  text-align: left;
   padding: 0 3%;
 }
 @media (max-width: 500px) {
   .team .people-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 0;
     text-align: center;
   }
@@ -624,8 +636,6 @@ footer .nature a {
 }
 .quote {
   text-align: center;
-}
-@media (max-width: 500px) {
 }
 .quote div {
   padding: 3%;
