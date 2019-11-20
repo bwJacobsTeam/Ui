@@ -195,6 +195,7 @@ nav div a {
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 4%;
+  padding: 0 1%;
   color: black;
 }
 nav div a:hover {
@@ -205,6 +206,7 @@ nav div a:hover {
   nav div a {
     font-size: 1.6rem;
     margin: 0 3%;
+    padding: 0;
   }
 
 }
@@ -266,7 +268,7 @@ nav div a:hover {
 }
 .team img {
   border-radius: 50%;
-  width: 245px;
+  width: 240px;
 }
 .team a {
   text-decoration: none;
