@@ -8,7 +8,7 @@
         height: 575px;
 
         @media @phone {
-            height: 875px;
+            height: 860px;
         }
 
         h2 {
@@ -25,6 +25,18 @@
                 position: relative;
                 text-align: center;
                 padding-top: 4%;
+            }
+        }
+
+        .people {
+            
+            @media @tablet {
+                padding-top: 4%;
+                padding-left: 10%;
+            }
+
+            @media @phone {
+                padding-left: 0;
             }
         }
 
@@ -62,6 +74,7 @@
     img {
         border-radius: 50%;
         width: 240px;
+
     }
 
     a {
@@ -74,6 +87,10 @@
         width: 100%;
         padding-top: 2%;
         padding-right:20%;
+
+        @media @tablet {
+            padding-top: 4%;
+        }
 
         @media @phone {
             .flex(column, center, center);
@@ -88,9 +105,13 @@
         padding-top: 2%;
         padding-left: 20%;
 
+        @media @tablet {
+            padding-right: 10%;
+        }
+
         @media @phone {
             .flex(column, center, center);
-            padding-left: 0;
+            padding: 0;
         }
     }
 
@@ -98,7 +119,7 @@
         height: 575px;
 
         @media @phone {
-            height: 825px;
+            height: 800px;
 
             .people {
                 padding-top: 7%;
@@ -112,7 +133,7 @@
         height: 575px;
 
         @media @phone {
-            height: 825px;
+            height: 800px;
 
             .people {
                 padding-top: 7%;

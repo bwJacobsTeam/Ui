@@ -16,15 +16,24 @@ nav {
         .a-links {
             width: 15%;
 
+            @media @tablet {
+                width: 20%;
+            }
+
             @media @phone {
                 width: 30%;
                 border-bottom: 3px dotted @shark;
                 padding: 0 0 2%;
             }
+
         }
 
         img {
             width: 8%;
+
+            @media @tablet {
+                width: 11.5%;
+            }
 
             @media @phone {
                 width: 15%;
@@ -72,6 +81,7 @@ nav {
             background-color: inherit;
             font-family: inherit;
             margin: 0;
+
         }
 
         .drop-content {
