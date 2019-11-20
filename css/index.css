@@ -149,16 +149,19 @@ h4,
 h5,
 h6 {
   font-family: 'Alata', sans-serif;
-  color: #212529;
+  color: #342F48;
 }
 h1 {
   font-size: 3.6rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h2 {
   font-size: 3.2rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h3 {
   font-size: 3rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h4 {
   font-size: 2.2rem;
@@ -200,10 +203,16 @@ nav div a {
 nav div a:hover {
   background: #E66C4D;
 }
+@media (max-width: 500px) {
+  nav div a {
+    font-size: 1.6rem;
+    margin: 0 3%;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #F2F3F0;
@@ -227,7 +236,7 @@ footer .footernav {
 footer .footernav a {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-betwen;
   align-items: center;
   text-align: center;
 }
@@ -235,7 +244,7 @@ footer .footernav a {
   footer .footernav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     padding: 0;
@@ -285,11 +294,39 @@ footer .nature a {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .container .hello {
-  background-image: url("../img/whale.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/turtles.jpg");
   background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: scroll;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2% 0;
+}
+.container .hello .hellocontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .hello .hellocontent h1 {
+  text-align: center;
+  background-color: rgba(242, 243, 239, 0.3);
+  padding: 0 2%;
+}
+.container .hello .hellocontent h3 {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: rgba(242, 243, 239, 0.3);
+  padding: 0 1%;
 }
 .container .intro {
   display: flex;
@@ -302,6 +339,11 @@ footer .nature a {
   height: 500px;
   background-color: #F2F3F0;
 }
+@media (max-width: 500px) {
+  .container .intro .introcontent {
+    width: 100%;
+  }
+}
 .container .intro .introimg {
   background-image: url("../img/tiger2.jpg");
   background-repeat: no-repeat;
@@ -310,8 +352,20 @@ footer .nature a {
   background-color: #E48047;
   width: 50%;
   height: 500px;
-  border: solid green 3px;
   color: #F2F3F0;
+}
+@media (max-width: 500px) {
+  .container .intro .introimg {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .banner {
   display: flex;
@@ -324,6 +378,36 @@ footer .nature a {
 .container .banner img {
   width: 100%;
 }
+.container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .content div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .content div {
+    width: 100%;
+  }
+}
+.container .content img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .content img {
+    width: 100%;
+  }
+}
 .container .livefeeddiv {
   display: flex;
   flex-direction: row;
@@ -331,12 +415,71 @@ footer .nature a {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container .livefeeddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.container .livefeeddiv .campaignthumbodd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 33%;
+  height: 100%;
+  background-color: #B2B4BC;
+  border: solid 2px #F2F3F0;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .container .livefeeddiv .campaignthumbodd {
+    width: 100%;
+  }
+}
+.container .livefeeddiv .campaignthumbodd img {
+  margin-top: 1%;
+  border: solid 1px #212529;
+  width: 70%;
+}
+.container .livefeeddiv .campaignthumbodd p {
+  width: 70%;
+  padding: 3% 0;
+}
 .container .livefeeddiv .campaignthumb {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 33%;
+  background-color: #F2F3F0;
+  border: solid 2px #B2B4BC;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .container .livefeeddiv .campaignthumb {
+    width: 100%;
+  }
+}
+.container .livefeeddiv .campaignthumb img {
+  margin-top: 1%;
+  border: solid 1px #212529;
+  width: 70%;
+}
+.container .livefeeddiv .campaignthumb p {
+  width: 70%;
+  padding: 3% 0;
+}
+.container .go {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
 }
 .container .go .org {
   display: flex;
@@ -348,6 +491,7 @@ footer .nature a {
   background-position: center;
   background-attachment: scroll;
   background-color: #E48047;
+  width: 80%;
   height: 700px;
   border: solid yellow 3px;
 }
@@ -365,6 +509,7 @@ footer .nature a {
   background-attachment: scroll;
   background-color: #E48047;
   height: 700px;
+  width: 50%;
   border: solid green 3px;
 }
 .container .go .support button {
@@ -378,13 +523,24 @@ footer .nature a {
   background-color: #E48047;
   width: 100%;
 }
-.container .contact a {
+.container .contact .contactus {
+  background-color: rgba(181, 122, 94, 0.32);
+  width: 100%;
+  padding: 2%;
+}
+.container .contact .contactus a {
   text-decoration: none;
   color: #212529;
 }
-.container .contact a:hover {
+.container .contact .contactus a:hover {
   text-decoration: none;
   color: #E66C4D;
+}
+.container .contact .contactus .media {
+  margin-top: 1%;
+}
+.container .contact .contactus .media a {
+  padding-right: 3%;
 }
 .team {
   width: 100%;
