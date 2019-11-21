@@ -3,6 +3,10 @@ footer {
     width: 100%;
     background-color: @white;
 
+    @media @tablet {
+        .flex(column-reverse, center, center);
+    }
+
     @media @phone {
         .flex(column, baseline, center);
     }
@@ -17,6 +21,15 @@ footer {
             text-align: center;
         }
 
+        @media @tablet {
+            .flex(row, space-between, center);
+            width: 75%;
+            
+            a {
+                .flex(row, space-between, center);
+            }
+        }
+
         @media @phone {
             .flex(row, space-between, center);
             width: 80%;
@@ -27,6 +40,11 @@ footer {
     .copy{
         .flex(row, center, center);
         width: 33%;
+
+        @media @tablet {
+            .flex(row, baseline, center);
+            margin-top: 1%;
+        }
 
         @media @phone {
             .flex(row, center, center);
@@ -41,6 +59,12 @@ footer {
 
         a {
             padding-left: 3%; 
+        }
+
+        @media @tablet {
+            .flex(row, space-between, center);
+            width: 32%;
+            margin: 2% 0 1%;
         }
 
         @media @phone {
