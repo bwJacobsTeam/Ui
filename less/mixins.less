@@ -5,13 +5,13 @@
     align-items: @align;
 }
 
-.btn-class (@width, @height, @color) {
-    background-color: white;
+.btn-class (@width, @height, @color, @txt-color) {
+    background-color: @color;
     width: @width;
     height: @height;
     font-size: 1.8rem;
     border: none;
-    color: @color;
+    color: @txt-color;
 
     &:hover {
         background-color: @hover;
@@ -24,4 +24,13 @@
     background-position: center;
     background-size: cover;
     width: @width;
+}
+
+.dropdown(){
+    display: none;
+    position: absolute;
+    background-color: @white;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }

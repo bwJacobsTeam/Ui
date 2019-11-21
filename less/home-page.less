@@ -1,7 +1,251 @@
-.contact {
-    background-image: url('img/giraffetxture.jpg') 
-}
 
-.button {
-    background-image: linear-gradient(to bottom right, red, yellow);
-}
+.container {
+    .flex(column, center, center);
+    width: 100%;
+
+    @media @phone {
+        width: 100%;
+    } 
+    
+    //info and video//
+    .hello {
+        .flex(column, center, center);
+        background-image: url("../img/turtles.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-attachment: fixed;
+        padding: 3% 0;
+
+        .hellocontent {
+            .flex(column, center, center);
+
+            h1 {
+                text-align: center;
+                background-color: rgba(242, 243, 239, 0.3);
+                padding: 0 3% 1%;
+                text-decoration: underline;
+            }
+
+            h3 {
+                text-align: center;
+                flex-wrap: wrap;
+                width: 80%;
+                background-color: rgba(242, 243, 239, 0.3);
+                padding: 0 1%;
+            }
+        }
+    } // closes info//
+
+    //content styles//
+    .content {
+        .flex(row, space-between, center);
+        
+        @media @phone {
+            .flex(column, center, center);
+        }
+
+        div {
+            width: 50%;
+            
+            @media @phone {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 50%;
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+    } //closes content styles//
+
+
+    //introduction and call to action//
+    .intro {
+        .flex(row, center, center);
+
+        .introcontent {
+            width: 50%;
+            height: 500px;
+            background-color: @main-bg;
+            padding: 4%;
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+        
+        .introimg {
+            background-image: url("../img/tiger2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-color: @ltorange;
+            width: 50%;
+            height: 500px;
+            color: @main-bg;
+            padding: 4%;
+
+            p {
+                padding-bottom: 2%;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+
+            button {
+                .btn-class(18rem, 4rem, @header-color, @main-bg);
+                border-radius: 10px;
+                margin: 1% 0 0 0;
+                cursor: pointer;
+                display: inline;
+            }
+        }
+        
+        @media @phone{
+            .flex(column, center, center);
+        }
+    } //closes intro
+    
+    //fox fur banner//
+    .banner {
+        .flex(row, center, center);
+        width: 100%;
+        height: auto;
+            img {
+            width: 100%;
+            }
+    } //closes fox fur banner//
+
+
+    //Turtle Story//
+    .turtle {
+        background-image: url("../img/turtle.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-color: @ltorange;
+        width: 50%;
+        height: 500px;
+        color: @main-bg;
+        padding: 4%;
+        
+        p {
+            background-color: rgba(181, 122, 94, 0.15);
+        }
+    }
+
+    .noturtle {
+        background-color: @main-bg;
+        height: 500px;
+        padding: 7% 4% 4% 4%;
+    } //Closes Turtle Story//
+
+//livefeed//
+    .livefeed h2 {
+        background-color: @accent-bg;
+        padding: 2% 4% 0 4%;
+    }
+
+    .livefeeddiv {
+            .flex(row, space-evenly, stretch);
+            width: 100%;
+            background-color: @accent-bg;
+            padding: 2rem;
+
+            @media @phone {
+                .flex(column, center, center);
+                width: 100%;
+            }
+
+        .campaignthumb {
+            .flex(row, center, flex-start);
+            flex-wrap: wrap;
+            width: 30%;
+            background-color: @main-bg; 
+            padding: 2rem 0;
+            border: @font-color 1px solid;
+
+            @media @phone {
+                width: 90%;
+                margin-bottom: 5%;
+            }
+
+            h4 {
+                .flex(row, center, center);
+                flex-wrap: nowrap;
+                padding: 1rem;
+            }
+
+            img {
+                margin-top: 1%;
+                border: solid 1px @font-color;
+                width: 80%;
+                align-self: flex-start;
+            }
+
+            .feedcontent {
+                background-color:@main-bg;
+                border: solid 1px @accent-bg;
+                padding: 1%;
+                text-align: center;
+                max-height: 200px;
+                min-height: 200px;
+                overflow-y: scroll;
+                width: 80%;
+                margin: 1vw 0;
+            }
+
+            p {
+                padding: 3% 0;
+            }
+
+            .campaign-cta{
+                align-self: flex-end;
+            }
+
+            button {
+                .btn-class(12rem, 4rem, @header-color, @main-bg);
+                border-radius: 10px;
+                margin-top: 1%;
+                cursor: pointer;
+            }
+        }
+    } //closes livefeed//
+
+    .contact {
+        background-image: url("../img/giraffetexture.jpg");
+        background-repeat: repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-color: @ltorange;
+        width: 100%;
+
+        .contactus {
+            background-color: rgba(181, 122, 94, 0.32);
+            width: 100%;
+            padding: 2% 4%;
+
+            a {
+                text-decoration: none;
+                color: @font-color;
+            }
+
+                a:hover {
+                    text-decoration: none;
+                    color: @hover;
+                }
+
+                .media{
+                    margin-top: 1%;
+
+                    a { 
+                        padding-right: 3%;
+                    }
+                }
+            }
+    } //closes contact//
+} //container close//

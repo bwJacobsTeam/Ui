@@ -1,0 +1,52 @@
+footer {
+    .flex(row, center, center);
+    width: 100%;
+    background-color: @white;
+
+    @media @phone {
+        .flex(column, baseline, center);
+    }
+
+    .footernav{
+        .flex(row, space-evenly, center);
+        width: 30%;
+        padding-left: 4%;
+    
+        a {
+            .flex(row, space-betwen, center);
+            text-align: center;
+        }
+
+        @media @phone {
+            .flex(row, space-between, center);
+            width: 80%;
+            padding: 0;
+        }
+    }
+    
+    .copy{
+        .flex(row, center, center);
+        width: 33%;
+
+        @media @phone {
+            .flex(row, center, center);
+            width: 80%;
+            margin-bottom: 3%;
+        }
+    }
+
+    .nature {
+        .flex(row, center, right);
+        width: 33%;
+
+        a {
+            padding-left: 3%; 
+        }
+
+        @media @phone {
+            .flex(row, center, center);
+            width: 80%;
+            margin-bottom: 2%; 
+        }
+    }
+}
