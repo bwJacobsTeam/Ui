@@ -780,10 +780,17 @@ footer .nature a {
   }
 }
 .team .react {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('/images/giraffe.jpg');
   height: 575px;
 }
 @media (max-width: 500px) {
   .team .react {
+    background-position: right;
     height: 800px;
   }
   .team .react .people {
@@ -813,7 +820,13 @@ footer .nature a {
   background-position: center;
   background-size: cover;
   width: 100%;
+  background-image: url('/images/desert.jpg');
   text-align: center;
+}
+@media (max-width: 500px) {
+  .quote {
+    background-position: left;
+  }
 }
 .quote div {
   padding: 3%;

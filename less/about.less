@@ -119,9 +119,12 @@
     }
 
     .react {
+        .bg-img(100%);
+        background-image: url('/images/giraffe.jpg');
         height: 575px;
 
         @media @phone {
+            background-position: right;
             height: 800px;
 
             .people {
@@ -148,7 +151,12 @@
 
 .quote {
     .bg-img(100%);
+    background-image: url('/images/desert.jpg');
     text-align: center;
+
+    @media @phone {
+        background-position: left;
+    }
     
 
     div {
