@@ -183,6 +183,11 @@ nav .nav-links {
   margin-top: 1%;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  nav .nav-links {
+    margin-bottom: 2%;
+  }
+}
 nav .nav-links .dropdown1,
 nav .nav-links .dropdown2 {
   display: inline-block;
@@ -253,6 +258,7 @@ nav div .a-links {
     text-align: center;
     width: 30%;
     border-bottom: 3px dotted #212529;
+    padding: 1% 0;
   }
 }
 nav div img {
@@ -472,6 +478,8 @@ footer .nature a {
 }
 .container .intro .introimg button {
   background-color: #342F48;
+  width: 18rem;
+  height: 4rem;
   font-size: 1.8rem;
   border: none;
   color: #F2F3F0;
@@ -818,6 +826,7 @@ footer .nature a {
 .quote div h2 {
   color: #342F48;
   text-transform: uppercase;
+  text-shadow: 1px 1px 3px #212529;
 }
 @media (max-width: 500px) {
   .quote div h2 {
@@ -829,6 +838,11 @@ footer .nature a {
   font-size: 2.4rem;
   width: 30%;
   padding: 2%;
+}
+@media (max-width: 800px) {
+  .quote div p {
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .quote div p {
