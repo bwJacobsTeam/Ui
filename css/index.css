@@ -210,13 +210,17 @@ nav .nav-links .dropdown2 .dropbtn {
   font-family: inherit;
   margin: 0;
 }
+nav .nav-links .dropdown1 .dropbtn:hover,
+nav .nav-links .dropdown2 .dropbtn:hover {
+  background: #E66C4D;
+}
 nav .nav-links .dropdown1 .drop-content,
 nav .nav-links .dropdown2 .drop-content {
   display: none;
   position: absolute;
   background-color: #F2F3F0;
   max-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 nav .nav-links .dropdown1 .drop-content a,
