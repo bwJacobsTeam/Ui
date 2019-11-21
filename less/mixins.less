@@ -5,13 +5,13 @@
     align-items: @align;
 }
 
-.btn-class (@width, @height, @color) {
-    background-color: white;
+.btn-class (@width, @height, @color, @txt-color) {
+    background-color: @color;
     width: @width;
     height: @height;
     font-size: 1.8rem;
     border: none;
-    color: @color;
+    color: @txt-color;
 
     &:hover {
         background-color: @hover;
