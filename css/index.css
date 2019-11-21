@@ -303,7 +303,7 @@ footer {
 @media (max-width: 500px) {
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: baseline;
     align-items: center;
   }
@@ -390,7 +390,7 @@ footer .nature a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 32%;
+    width: 30%;
     margin: 2% 0 1%;
   }
 }
@@ -401,7 +401,7 @@ footer .nature a {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-bottom: 2%;
+    margin: 3% 0;
   }
 }
 .container {
@@ -438,6 +438,7 @@ footer .nature a {
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 700px;
   }
 }
 @media (max-width: 500px) {
@@ -516,6 +517,11 @@ footer .nature a {
   background-color: #F2F3F0;
   padding: 4%;
 }
+@media (max-width: 800px) {
+  .container .intro .introcontent {
+    height: 450px;
+  }
+}
 @media (max-width: 500px) {
   .container .intro .introcontent {
     width: 100%;
@@ -537,10 +543,18 @@ footer .nature a {
 .container .intro .introimg p {
   padding-bottom: 2%;
 }
+@media (max-width: 800px) {
+  .container .intro .introimg {
+    height: 450px;
+  }
+}
 @media (max-width: 500px) {
   .container .intro .introimg {
     width: 100%;
   }
+}
+.container .intro .introimg a {
+  text-decoration: none;
 }
 .container .intro .introimg button {
   background-color: #342F48;
@@ -608,6 +622,11 @@ footer .nature a {
 .container .livefeed h2 {
   background-color: #B2B4BC;
   padding: 2% 4% 0 4%;
+}
+@media (max-width: 800px) {
+  .container .livefeed h2 {
+    text-align: center;
+  }
 }
 .container .livefeeddiv {
   display: flex;
@@ -704,7 +723,8 @@ footer .nature a {
   }
 }
 .container .livefeeddiv .campaignthumb p {
-  padding: 3% 0;
+  padding: 2% 0;
+  text-align: left;
 }
 .container .livefeeddiv .campaignthumb .campaign-cta {
   align-self: flex-end;
@@ -731,14 +751,62 @@ footer .nature a {
   background-color: #E48047;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .contact {
+    width: 100%;
+  }
+}
 .container .contact .contactus {
   background-color: rgba(181, 122, 94, 0.32);
   width: 100%;
   padding: 2% 4%;
 }
+@media (max-width: 800px) {
+  .container .contact .contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container .contact .contactus {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container .contact .contactus h2 {
+    margin-bottom: 1%;
+  }
+}
+@media (max-width: 800px) {
+  .container .contact .contactus p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
 .container .contact .contactus a {
   text-decoration: none;
   color: #212529;
+}
+@media (max-width: 800px) {
+  .container .contact .contactus a {
+    margin: 2% 0 1% 0;
+  }
 }
 .container .contact .contactus a:hover {
   text-decoration: none;
@@ -747,19 +815,29 @@ footer .nature a {
 .container .contact .contactus .media {
   margin-top: 1%;
 }
-.container .contact .contactus .media a {
-  padding-right: 3%;
-}
 @media (max-width: 800px) {
   .container .contact .contactus .media {
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .contact .contactus .media {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
   .container .contact .contactus .media a {
     padding-right: 5%;
   }
+}
+.container .contact .contactus .media a {
+  padding-right: 2.5%;
 }
 .team {
   width: 100%;

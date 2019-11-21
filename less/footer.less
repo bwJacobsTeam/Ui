@@ -8,7 +8,7 @@ footer {
     }
 
     @media @phone {
-        .flex(column, baseline, center);
+        .flex(column-reverse, baseline, center);
     }
 
     .footernav{
@@ -63,14 +63,14 @@ footer {
 
         @media @tablet {
             .flex(row, space-between, center);
-            width: 32%;
+            width: 30%;
             margin: 2% 0 1%;
         }
 
         @media @phone {
             .flex(row, center, center);
             width: 80%;
-            margin-bottom: 2%; 
+            margin: 3% 0; 
         }
     }
 }

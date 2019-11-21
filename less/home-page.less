@@ -25,6 +25,7 @@
             background-position: bottom;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            height: 700px;
         }
 
         @media @phone {
@@ -96,6 +97,10 @@
             background-color: @main-bg;
             padding: 4%;
 
+            @media @tablet {
+                height: 450px;
+            }
+
             @media @phone {
                 width: 100%;
                 height: auto;
@@ -118,8 +123,16 @@
                 padding-bottom: 2%;
             }
 
+            @media @tablet {
+                height: 450px;
+            }
+
             @media @phone {
                 width: 100%;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             button {
@@ -128,6 +141,7 @@
                 margin: 1% 0 0 0;
                 cursor: pointer;
                 display: inline;
+
             }
         }
         
@@ -182,6 +196,10 @@
     .livefeed h2 {
         background-color: @accent-bg;
         padding: 2% 4% 0 4%;
+
+        @media @tablet {
+            text-align: center;
+        }
     }
 
     .livefeeddiv {
@@ -260,7 +278,8 @@
             }
 
             p {
-                padding: 3% 0;
+                padding: 2% 0;
+                text-align: left;
             }
 
             .campaign-cta{
@@ -276,6 +295,7 @@
         }
     } //closes livefeed//
 
+    //contact//
     .contact {
         background-image: url("../img/giraffetexture.jpg");
         background-repeat: repeat;
@@ -284,40 +304,79 @@
         background-color: @ltorange;
         width: 100%;
 
+            @media @tablet {
+                .flex(column, center, center);
+                width: 100%;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+
         .contactus {
             background-color: rgba(181, 122, 94, 0.32);
             width: 100%;
             padding: 2% 4%;
 
             @media @tablet {
-                
+                .flex(column, center, center);
+                width: 100%;
+            }
+
+            @media @tablet {
+                width: 100%;
+            }
+
+            h2 {
+                @media @tablet {
+                    margin-bottom: 1%;
+                }
+            }
+
+            p {
+                @media @tablet {
+                .flex(column, center, center);
+                margin: 3% 0;
+                width: 100%;
+                }
             }
 
             a {
                 text-decoration: none;
                 color: @font-color;
+
+                @media @tablet {
+                    margin: 2% 0 1% 0;
+                }
             }
 
-                a:hover {
-                    text-decoration: none;
-                    color: @hover;
-                }
+            a:hover {
+                text-decoration: none;
+                color: @hover;
+            }
 
                 .media{
                     margin-top: 1%;
 
-                    a { 
-                        padding-right: 3%;
+                    @media @tablet {
+                        width: 60%;
+                        .flex(row, space-between, center)
                     }
 
-                    @media @tablet {
-                        .flex(row, center, center);
+                    @media @phone {
+                        width: 80%;
+                        .flex(row, space-between, center);
 
                         a {
                             padding-right: 5%;
                         }
                     }
+
+                    a { 
+                        padding-right: 2.5%;
+                    }
                 }
-            }
+            
+        }
     } //closes contact//
 } //container close//
