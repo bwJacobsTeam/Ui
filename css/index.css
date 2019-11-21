@@ -150,16 +150,19 @@ h4,
 h5,
 h6 {
   font-family: 'Alata', sans-serif;
-  color: #212529;
+  color: #342F48;
 }
 h1 {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h2 {
   font-size: 3.2rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h3 {
   font-size: 3rem;
+  text-shadow: 1px 1px 3px #F2F3F0;
 }
 h4 {
   font-size: 2.2rem;
@@ -284,7 +287,7 @@ nav div a:hover {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #F2F3F0;
@@ -308,7 +311,7 @@ footer .footernav {
 footer .footernav a {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-betwen;
   align-items: center;
   text-align: center;
 }
@@ -316,7 +319,7 @@ footer .footernav a {
   footer .footernav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     padding: 0;
@@ -366,11 +369,70 @@ footer .nature a {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .container .hello {
-  background-image: url("../img/whale.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/turtles.jpg");
   background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: scroll;
+  background-position: left;
+  background-attachment: fixed;
+  padding: 3% 0;
+}
+.container .hello .hellocontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .hello .hellocontent h1 {
+  text-align: center;
+  background-color: rgba(242, 243, 239, 0.3);
+  padding: 0 3% 1%;
+  text-decoration: underline;
+}
+.container .hello .hellocontent h3 {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: rgba(242, 243, 239, 0.3);
+  padding: 0 1%;
+}
+.container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .content div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .content div {
+    width: 100%;
+  }
+}
+.container .content img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .content img {
+    width: 100%;
+  }
 }
 .container .intro {
   display: flex;
@@ -382,6 +444,12 @@ footer .nature a {
   width: 50%;
   height: 500px;
   background-color: #F2F3F0;
+  padding: 4%;
+}
+@media (max-width: 500px) {
+  .container .intro .introcontent {
+    width: 100%;
+  }
 }
 .container .intro .introimg {
   background-image: url("../img/tiger2.jpg");
@@ -391,8 +459,37 @@ footer .nature a {
   background-color: #E48047;
   width: 50%;
   height: 500px;
-  border: solid green 3px;
   color: #F2F3F0;
+  padding: 4%;
+}
+.container .intro .introimg p {
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .container .intro .introimg {
+    width: 100%;
+  }
+}
+.container .intro .introimg button {
+  background-color: #342F48;
+  font-size: 1.8rem;
+  border: none;
+  color: #F2F3F0;
+  border-radius: 10px;
+  margin: 1% 0 0 0;
+  cursor: pointer;
+  display: inline;
+}
+.container .intro .introimg button:hover {
+  background-color: #E66C4D;
+}
+@media (max-width: 500px) {
+  .container .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .banner {
   display: flex;
@@ -405,51 +502,108 @@ footer .nature a {
 .container .banner img {
   width: 100%;
 }
+.container .turtle {
+  background-image: url("../img/turtle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-color: #E48047;
+  width: 50%;
+  height: 500px;
+  color: #F2F3F0;
+  padding: 4%;
+}
+.container .turtle p {
+  background-color: rgba(181, 122, 94, 0.15);
+}
+.container .noturtle {
+  background-color: #F2F3F0;
+  height: 500px;
+  padding: 7% 4% 4% 4%;
+}
+.container .livefeed h2 {
+  background-color: #B2B4BC;
+  padding: 2% 4% 0 4%;
+}
 .container .livefeeddiv {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
   width: 100%;
+  background-color: #B2B4BC;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .container .livefeeddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 .container .livefeeddiv .campaignthumb {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 30%;
+  background-color: #F2F3F0;
+  padding: 2rem 0;
+  border: #212529 1px solid;
 }
-.container .go .org {
+@media (max-width: 500px) {
+  .container .livefeeddiv .campaignthumb {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+}
+.container .livefeeddiv .campaignthumb h4 {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-image: url("../img/goat.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-color: #E48047;
-  height: 700px;
-  border: solid yellow 3px;
+  flex-wrap: nowrap;
+  padding: 1rem;
 }
-.container .go .org button {
-  width: 100%;
+.container .livefeeddiv .campaignthumb img {
+  margin-top: 1%;
+  border: solid 1px #212529;
+  width: 80%;
+  align-self: flex-start;
 }
-.container .go .support {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("../img/fox.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-color: #E48047;
-  height: 700px;
-  border: solid green 3px;
+.container .livefeeddiv .campaignthumb .feedcontent {
+  background-color: #F2F3F0;
+  border: solid 1px #B2B4BC;
+  padding: 1%;
+  text-align: center;
+  max-height: 200px;
+  min-height: 200px;
+  overflow-y: scroll;
+  width: 80%;
+  margin: 1vw 0;
 }
-.container .go .support button {
-  width: 100%;
+.container .livefeeddiv .campaignthumb p {
+  padding: 3% 0;
+}
+.container .livefeeddiv .campaignthumb .campaign-cta {
+  align-self: flex-end;
+}
+.container .livefeeddiv .campaignthumb button {
+  background-color: #342F48;
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  border: none;
+  color: #F2F3F0;
+  border-radius: 10px;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.container .livefeeddiv .campaignthumb button:hover {
+  background-color: #E66C4D;
 }
 .container .contact {
   background-image: url("../img/giraffetexture.jpg");
@@ -459,13 +613,24 @@ footer .nature a {
   background-color: #E48047;
   width: 100%;
 }
-.container .contact a {
+.container .contact .contactus {
+  background-color: rgba(181, 122, 94, 0.32);
+  width: 100%;
+  padding: 2% 4%;
+}
+.container .contact .contactus a {
   text-decoration: none;
   color: #212529;
 }
-.container .contact a:hover {
+.container .contact .contactus a:hover {
   text-decoration: none;
   color: #E66C4D;
+}
+.container .contact .contactus .media {
+  margin-top: 1%;
+}
+.container .contact .contactus .media a {
+  padding-right: 3%;
 }
 .team {
   width: 100%;
