@@ -119,9 +119,12 @@
     }
 
     .react {
+        .bg-img(100%);
+        background-image: url('/images/giraffe.jpg');
         height: 575px;
 
         @media @phone {
+            background-position: right;
             height: 800px;
 
             .people {
@@ -147,15 +150,24 @@
 }
 
 .quote {
+    .bg-img(100%);
+    background-image: url('/images/desert.jpg');
     text-align: center;
-   
+
+    @media @phone {
+        background-position: left;
+    }
+    
+
     div {
         padding: 3%;
         .flex(column, center, center);
+        border-bottom: 3px dotted @shark;
 
         h2 {
             color: @purple;
             text-transform: uppercase;
+            text-shadow: 1px 1px 3px @shark;
 
             @media @phone {
                 font-size: 3rem;
@@ -167,6 +179,10 @@
             font-size: 2.4rem;
             width: 30%;
             padding: 2%;
+
+            @media @tablet {
+                width: 50%;
+            }
 
             @media @phone {
                 width: 75%;
