@@ -1,13 +1,59 @@
 nav {
     .flex(column, center, center);
     width: 100%;
-    margin: 3% 0;
+    margin: 2% 0;
+
+    .nav-links {
+        margin-top: 1%;
+        overflow: hidden;
+
+        @media @phone {
+            margin-bottom: 2%;
+        }
+
+        .dropdown1, .dropdown2 {
+            display: inline-block;
+            margin-left: 6%;
+
+            @media @phone {
+                margin-left: 0;
+            }
+            
+            &:hover .drop-content {
+                display:block;
+            }
+    
+            .dropbtn {
+                display: inline-block;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+
+                &:hover {
+                    background: @hover;
+                }
+            }
+    
+            .drop-content {
+                .dropdown();
+    
+                a {
+                    float: none;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+    
+                    &:hover {
+                        background: @hover;
+                    }
+                }
+            }
+        }
+    }
 
     div {
         .flex(row, center, center);
-        flex-wrap: nowrap;
         width: 100%;
-        margin: 5px 0;
 
         @media @phone {
             .flex(column, center, center);
@@ -21,11 +67,11 @@ nav {
             }
 
             @media @phone {
+                text-align: center;
                 width: 30%;
                 border-bottom: 3px dotted @shark;
-                padding: 0 0 2%;
+                padding: 1% 0;
             }
-
         }
 
         img {
@@ -43,10 +89,9 @@ nav {
         a {
             text-decoration: none;
             font-size: 1.8rem;
-            margin: 0 1%;
-            padding: 0 2%;
             color: black;
-
+            display: inline-block;
+            text-align: center;
 
             &:hover {
                 background: @hover;
@@ -54,55 +99,11 @@ nav {
 
             @media @phone {
                 font-size: 1.6rem;
-                margin: 0 3%;
                 padding: 0;
             }
         }
     }
 }
 
-.nav-links {
-    overflow: hidden;
-    
-    a {
-        float: center;
-        // display: inline-block;
-        text-align: center;
-        padding: 0 2%;
-    }
 
-    .dropdown1, .dropdown2 {
-        float: center;
-        overflow: hidden;
-        // display: inline-block;
-        
-        &:hover .drop-content {
-            display:block;
-        }
-
-        .dropbtn {
-            // display: inline-block;
-            padding: 0 2%;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-
-        }
-
-        .drop-content {
-            .dropdown();
-
-            a {
-                float: none;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-
-                &:hover {
-                    background: @hover;
-                }
-            }
-        }
-    }
-}
 
