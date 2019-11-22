@@ -5,7 +5,11 @@
 
     @media @phone {
         width: 100%;
-    } 
+    }
+
+    @media @tablet {
+        width: 100%;
+    }
     
     //info and video//
     .hello {
@@ -16,6 +20,21 @@
         background-attachment: fixed;
         padding: 3% 0;
 
+        @media @tablet {
+            background-image: url("../img/panda.jpg");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 700px;
+        }
+
+        @media @phone {
+            background-image: url("../img/foxy.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-attachment: fixed;
+        }
+
         .hellocontent {
             .flex(column, center, center);
 
@@ -23,7 +42,12 @@
                 text-align: center;
                 background-color: rgba(242, 243, 239, 0.3);
                 padding: 0 3% 1%;
-                text-decoration: underline;
+                letter-spacing: .3em;
+
+                @media @phone {
+                    width: 80%;
+                    letter-spacing: .2rem;
+                }
             }
 
             h3 {
@@ -32,6 +56,7 @@
                 width: 80%;
                 background-color: rgba(242, 243, 239, 0.3);
                 padding: 0 1%;
+                color: @font-color;
             }
         }
     } // closes info//
@@ -72,8 +97,14 @@
             background-color: @main-bg;
             padding: 4%;
 
+            @media @tablet {
+                height: 450px;
+            }
+
             @media @phone {
                 width: 100%;
+                height: auto;
+                padding: 4% 4% 6% 4%;
             }
         }
         
@@ -92,8 +123,16 @@
                 padding-bottom: 2%;
             }
 
+            @media @tablet {
+                height: 450px;
+            }
+
             @media @phone {
                 width: 100%;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             button {
@@ -102,6 +141,7 @@
                 margin: 1% 0 0 0;
                 cursor: pointer;
                 display: inline;
+
             }
         }
         
@@ -136,18 +176,30 @@
         p {
             background-color: rgba(181, 122, 94, 0.15);
         }
+
+        @media @phone {
+            height: 350px;
+        }
     }
 
     .noturtle {
         background-color: @main-bg;
         height: 500px;
         padding: 7% 4% 4% 4%;
+
+        @media @phone {
+            height: auto;
+        }
     } //Closes Turtle Story//
 
 //livefeed//
     .livefeed h2 {
         background-color: @accent-bg;
         padding: 2% 4% 0 4%;
+
+        @media @tablet {
+            text-align: center;
+        }
     }
 
     .livefeeddiv {
@@ -155,6 +207,11 @@
             width: 100%;
             background-color: @accent-bg;
             padding: 2rem;
+
+            @media @tablet {
+                .flex (column, center, center);
+                width: 100%;
+            }
 
             @media @phone {
                 .flex(column, center, center);
@@ -169,8 +226,14 @@
             padding: 2rem 0;
             border: @font-color 1px solid;
 
-            @media @phone {
+            @media @tablet {
                 width: 90%;
+                margin-bottom: 5%;
+                min-height: 400px;
+            }
+
+            @media @phone {
+                width: 95%;
                 margin-bottom: 5%;
             }
 
@@ -178,6 +241,10 @@
                 .flex(row, center, center);
                 flex-wrap: nowrap;
                 padding: 1rem;
+
+                @media @tablet {
+                    width: 90%;
+                }
             }
 
             img {
@@ -185,6 +252,11 @@
                 border: solid 1px @font-color;
                 width: 80%;
                 align-self: flex-start;
+
+                @media @tablet {
+                    width: 35%;
+                    margin: 0 auto;
+                }
             }
 
             .feedcontent {
@@ -197,10 +269,17 @@
                 overflow-y: scroll;
                 width: 80%;
                 margin: 1vw 0;
+
+                @media @tablet {
+                    width: 50%;
+                    margin: 0 auto 0 0;
+                    max-height: 250px;
+                }
             }
 
             p {
-                padding: 3% 0;
+                padding: 2% 0;
+                text-align: left;
             }
 
             .campaign-cta{
@@ -216,6 +295,7 @@
         }
     } //closes livefeed//
 
+    //contact//
     .contact {
         background-image: url("../img/giraffetexture.jpg");
         background-repeat: repeat;
@@ -224,28 +304,79 @@
         background-color: @ltorange;
         width: 100%;
 
+            @media @tablet {
+                .flex(column, center, center);
+                width: 100%;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+
         .contactus {
             background-color: rgba(181, 122, 94, 0.32);
             width: 100%;
             padding: 2% 4%;
 
+            @media @tablet {
+                .flex(column, center, center);
+                width: 100%;
+            }
+
+            @media @tablet {
+                width: 100%;
+            }
+
+            h2 {
+                @media @tablet {
+                    margin-bottom: 1%;
+                }
+            }
+
+            p {
+                @media @tablet {
+                .flex(column, center, center);
+                margin: 3% 0;
+                width: 100%;
+                }
+            }
+
             a {
                 text-decoration: none;
                 color: @font-color;
+
+                @media @tablet {
+                    margin: 2% 0 1% 0;
+                }
             }
 
-                a:hover {
-                    text-decoration: none;
-                    color: @hover;
-                }
+            a:hover {
+                text-decoration: none;
+                color: @hover;
+            }
 
                 .media{
                     margin-top: 1%;
 
+                    @media @tablet {
+                        width: 60%;
+                        .flex(row, space-between, center)
+                    }
+
+                    @media @phone {
+                        width: 80%;
+                        .flex(row, space-between, center);
+
+                        a {
+                            padding-right: 5%;
+                        }
+                    }
+
                     a { 
-                        padding-right: 3%;
+                        padding-right: 2.5%;
                     }
                 }
-            }
+            
+        }
     } //closes contact//
 } //container close//
